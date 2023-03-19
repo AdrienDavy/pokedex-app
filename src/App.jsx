@@ -1,14 +1,14 @@
-
-
-import './App.css'
+import React from 'react';
+import Welcome from './pages/welcome/Welcome';
+import './App.css';
 
 function App() {
 
   return (
     <div className="App">
-      bonjour
+      <Welcome />
     </div>
   )
-}
+};
 
-export default App
+export default App;
