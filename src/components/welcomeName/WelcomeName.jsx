@@ -3,8 +3,9 @@ import './WelcomeName.css';
 
 const WelcomeName = () => {
   return (
-    <div>
-      WelcomeName
+    <div className='welcome-container'>
+      <h1>Bienvenue sur ton Pokédex</h1>
+
     </div>
   )
 };

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Welcome.css";
+import WelcomeName from "../../components/welcomeName/WelcomeName";
 //PICTURES
 import BigCloud from "../../assets/bigcloud.png";
 import Cloud1 from "../../assets/cloud1.png";
@@ -18,7 +19,9 @@ const Welcome = () => {
     });
   };
 
-  return (
+  return (<>
+    <WelcomeName className="welcomeName" />
+
     <div className="sky" onMouseMove={handleMouseMove}>
       <div className="clouds-container">
         <img
@@ -26,7 +29,7 @@ const Welcome = () => {
           alt="cloud"
           className="bigcloud"
           style={{
-            transform: `translate(calc(-50% + ${mousePosition.x / -120}px), calc(-50% + ${mousePosition.y / -120}px))`,
+            transform: `translate(calc(-50% + ${mousePosition.x / -100}px), calc(-50% + ${mousePosition.y / -100}px))`,
           }}
         />
         <img
@@ -42,7 +45,7 @@ const Welcome = () => {
           alt="cloud"
           className="cloud2"
           style={{
-            transform: `translate(calc(-50% + ${mousePosition.x / -100}px), calc(-50% + ${mousePosition.y / -100}px))`,
+            transform: `translate(calc(-50% + ${mousePosition.x / -70}px), calc(-50% + ${mousePosition.y / -70}px))`,
           }}
         />
       </div>
@@ -56,6 +59,7 @@ const Welcome = () => {
         transform: `translate(calc(-50% + ${mousePosition.x / -70}px), calc(-50% + ${mousePosition.y / -70}px))`,
       }} />
     </div>
+  </>
   );
 };
 
