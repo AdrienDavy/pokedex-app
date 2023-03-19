@@ -1,0 +1,69 @@
+body {
+  background: #3FA6C0;
+}
+
+.sky {
+  background: url('../../assets/sky.png');
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+}
+
+.clouds-container {
+  position: relative;
+  width: 85 vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+.bigcloud {
+  position: absolute;
+  top: 480px;
+  left: 25%;
+  width: 50%;
+}
+
+.cloud1 {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  width: 40%;
+}
+
+.cloud2 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 20%;
+}
+
+.backgroundfield {
+  position: absolute;
+  left: 50%;
+  bottom: -8%;
+  width: 106vw;
+  z-index: 2;
+}
+
+.house {
+  position: absolute;
+  right: -30%;
+  top: 43%;
+  width: 57vw;
+  z-index: 3;
+}
+
+.grassForeground {
+  position: absolute;
+  left: 50%;
+  bottom: -32%;
+  width: 106vw;
+  z-index: 4;
+}
+
+.welcomeName {
+  position: absolute;
+  top: 500px;
+  z-index: 5;
+}
