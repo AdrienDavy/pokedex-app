@@ -1,0 +1,40 @@
+.parallax-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+
+.parallax-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  z-index: -1;
+}
+
+.parallax-images-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.backgroundfield {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 500px;
+}
