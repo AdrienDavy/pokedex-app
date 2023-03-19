@@ -4,6 +4,9 @@ import "./Welcome.css";
 import BigCloud from "../../assets/bigcloud.png";
 import Cloud1 from "../../assets/cloud1.png";
 import Cloud2 from "../../assets/cloud2.png";
+import backgroundfield from "../../assets/backgroundfield.png";
+import House from "../../assets/house.png";
+import foreground from "../../assets/foreground.png";
 
 const Welcome = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
