@@ -9,6 +9,7 @@ import backgroundfield from "../../assets/backgroundfield.png";
 import House from "../../assets/house.png";
 import foreground from "../../assets/foreground.png";
 
+
 const Welcome = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   
@@ -48,9 +49,10 @@ const Welcome = () => {
     });
   };
 
-  return (<>
+  return (
 
     <div className="sky" onMouseMove={handleMouseMove}>
+      
     <WelcomeName />
       
         <img
@@ -70,8 +72,9 @@ const Welcome = () => {
       <img src={backgroundfield} alt="field" className={styles[3].name} style={styles[3]} />
       <img src={House} alt="field" className={styles[4].name} style={styles[4]} />
       <img src={foreground} alt="field" className={styles[5].name} style={styles[4]} />
+      
     </div>
-  </>
+  
   );
 };
 
