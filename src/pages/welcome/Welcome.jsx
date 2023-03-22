@@ -13,23 +13,24 @@ const Welcome = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   const handleMouseMove = (e) => {
+    console.log(e);
     setMousePosition({
-      x: e.pageX,
-      y: e.pageY,
+      x: e.screenX,
+      y: e.screenY,
     });
   };
 
   return (<>
-    <WelcomeName className="welcomeName" />
 
     <div className="sky" onMouseMove={handleMouseMove}>
-      <div className="clouds-container">
+    <WelcomeName />
+      {/* <div className="clouds-container"> */}
         <img
           src={BigCloud}
           alt="cloud"
           className="bigcloud"
           style={{
-            transform: `translate(calc(-50% + ${mousePosition.x / -100}px), calc(-50% + ${mousePosition.y / -100}px))`,
+            transform: `translate(calc(${mousePosition.x / -100}px), calc(${mousePosition.y / -100}px))`
           }}
         />
         <img
@@ -37,7 +38,7 @@ const Welcome = () => {
           alt="cloud"
           className="cloud1"
           style={{
-            transform: `translate(calc(-50% + ${mousePosition.x / -110}px), calc(-50% + ${mousePosition.y / -110}px))`,
+            transform: `translate(calc(${mousePosition.x / -110}px), calc(${mousePosition.y / -110}px))`
           }}
         />
         <img
@@ -45,18 +46,18 @@ const Welcome = () => {
           alt="cloud"
           className="cloud2"
           style={{
-            transform: `translate(calc(-50% + ${mousePosition.x / -70}px), calc(-50% + ${mousePosition.y / -70}px))`,
+            transform: `translate(calc(${mousePosition.x / -70}px), calc(${mousePosition.y / -70}px))`
           }}
         />
-      </div>
+      {/* </div> */}
       <img src={backgroundfield} alt="field" className="backgroundfield" style={{
-        transform: `translate(calc(-50% + ${mousePosition.x / -90}px), calc(-50% + ${mousePosition.y / -90}px))`,
+        transform: `translate(calc(${mousePosition.x / -90}px), calc(${mousePosition.y / -90}px))`
       }} />
       <img src={House} alt="field" className="house" style={{
-        transform: `translate(calc(-50% + ${mousePosition.x / -80}px), calc(-50% + ${mousePosition.y / -80}px))`,
+        transform: `translate(calc(${mousePosition.x / -80}px), calc(${mousePosition.y / -80}px))`
       }} />
       <img src={foreground} alt="field" className="grassForeground" style={{
-        transform: `translate(calc(-50% + ${mousePosition.x / -70}px), calc(-50% + ${mousePosition.y / -70}px))`,
+        transform: `translate(calc(${mousePosition.x / -70}px), calc(${mousePosition.y / -70}px))`
       }} />
     </div>
   </>
