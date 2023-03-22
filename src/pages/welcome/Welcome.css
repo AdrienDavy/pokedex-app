@@ -18,27 +18,20 @@ body {
   align-items: center;
 }
 
-.clouds-container {
-  /* position: relative; */
-  width: 85 vw;
-  height: 100vh;
-  z-index: 1;
-}
-
 .bigcloud {
   position: absolute;
-  top: 400px;
-  left: 25%;
+  bottom: 350px;
+  left: 40px;
   width: 50%;
-  z-index: 5;
-  opacity: 0.9;
+  z-index: 1;
 }
 
 .cloud1 {
   position: absolute;
-  top: 10%;
-  left: 25%;
+  top: 20px;
+  left: 20px;
   width: 40%;
+  z-index: 1;
 }
 
 .cloud2 {
@@ -46,29 +39,65 @@ body {
   top: 30%;
   left: 50%;
   width: 20%;
+  z-index: 1;
 }
 
 .backgroundfield {
   position: absolute;
-  left: 50%;
-  bottom: -8%;
-  width: 106vw;
-  z-index: 2;
-  max-width: 100%;
+  left: 0;
+  bottom: 0;
+  width: 103vw;
+  z-index: 3;
 }
 
 .house {
   position: absolute;
-  right: -30%;
-  top: 43%;
-  width: 57vw;
-  z-index: 3;
+  right: 0;
+  bottom: -100px;
+  width: 52vw;
+  z-index: 4;
 }
 
 .grassForeground {
   position: absolute;
   left: 0;
-  bottom: -20px;
-  width: 100vw;
-  z-index: 4;
+  bottom: -100px;
+  width: 103vw;
+  z-index: 5;  
+}
+
+.backgroundfield, .house, .grassForeground{
+  transition: bottom 0.5s ease-in-out;
+}
+
+
+/* VERSION TABLETTE */
+
+@media screen and (max-width:940px) {
+
+  
+  .backgroundfield {
+    bottom: 30px;
+  }
+  .house{
+    bottom: -20px;
+  }
+
+  .grassForeground{
+    bottom: -20px;
+  }
+}
+/* VERSION MOBILE */
+
+@media screen and (max-width:768px) {
+  .backgroundfield {
+    bottom: 30px;
+  }
+  .house{
+    bottom: -20px;
+  }
+
+  .grassForeground{
+    bottom: -20px;
+  }
 }

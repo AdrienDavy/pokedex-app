@@ -11,9 +11,37 @@ import foreground from "../../assets/foreground.png";
 
 const Welcome = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  
+
+  const styles = [
+    {
+      name: "bigcloud",
+      transform: `translate(calc(${mousePosition.x / -200}px), calc(${mousePosition.y / -200}px))`
+    },
+    {
+      name:"cloud1",
+      transform: `translate(calc(${mousePosition.x / -100}px), calc(${mousePosition.y / -100}px))`
+    },
+    {
+      name:"cloud2",
+      transform: `translate(calc(${mousePosition.x / -100}px), calc(${mousePosition.y / -100}px))`
+    },
+    {
+      name:"backgroundfield",
+      transform: `translate(calc(${mousePosition.x / -100}px), calc(${mousePosition.y / -100}px))`
+    },
+    {
+      name:"house",
+      transform: `translate(calc(${mousePosition.x / -100}px), calc(${mousePosition.y / -100}px))`
+    },
+    {
+      name:"grassForeground",
+      transform: `translate(calc(${mousePosition.x / -100}px), calc(${mousePosition.y / -100}px))`
+    },
+  ]
 
   const handleMouseMove = (e) => {
-    console.log(e);
+    
     setMousePosition({
       x: e.screenX,
       y: e.screenY,
@@ -24,41 +52,24 @@ const Welcome = () => {
 
     <div className="sky" onMouseMove={handleMouseMove}>
     <WelcomeName />
-      {/* <div className="clouds-container"> */}
+      
         <img
           src={BigCloud}
           alt="cloud"
-          className="bigcloud"
-          style={{
-            transform: `translate(calc(${mousePosition.x / -100}px), calc(${mousePosition.y / -100}px))`
-          }}
+          className={styles[0].name}
+          style={styles[0]}
         />
         <img
           src={Cloud1}
           alt="cloud"
-          className="cloud1"
-          style={{
-            transform: `translate(calc(${mousePosition.x / -110}px), calc(${mousePosition.y / -110}px))`
-          }}
+          className={styles[1].name}
+          style={styles[1]}
         />
-        <img
-          src={Cloud2}
-          alt="cloud"
-          className="cloud2"
-          style={{
-            transform: `translate(calc(${mousePosition.x / -70}px), calc(${mousePosition.y / -70}px))`
-          }}
-        />
-      {/* </div> */}
-      <img src={backgroundfield} alt="field" className="backgroundfield" style={{
-        transform: `translate(calc(${mousePosition.x / -90}px), calc(${mousePosition.y / -90}px))`
-      }} />
-      <img src={House} alt="field" className="house" style={{
-        transform: `translate(calc(${mousePosition.x / -80}px), calc(${mousePosition.y / -80}px))`
-      }} />
-      <img src={foreground} alt="field" className="grassForeground" style={{
-        transform: `translate(calc(${mousePosition.x / -70}px), calc(${mousePosition.y / -70}px))`
-      }} />
+        <img src={Cloud2} alt="cloud" className={styles[2].name} style={styles[2]} />
+      
+      <img src={backgroundfield} alt="field" className={styles[3].name} style={styles[3]} />
+      <img src={House} alt="field" className={styles[4].name} style={styles[4]} />
+      <img src={foreground} alt="field" className={styles[5].name} style={styles[4]} />
     </div>
   </>
   );
