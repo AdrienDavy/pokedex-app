@@ -1,13 +1,20 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './WelcomeName.css';
 import Pokeball from '../../assets/pokeball.png';
-import click from '../../assets/click.mp3'
+import SoundOn from '../../assets/soundOn.png';
+import Mute from '../../assets/mute.png';
+import click from '../../assets/click.mp3';
 
 const WelcomeName = () => {
+  const [isMuted, setIsMuted] = useState(false);
   const audioRef = useRef(null);
   const handleClick = () => {
     audioRef.current.play();
-    console.log(audioRef);
+    audioRef.current.volume = 0.3;
+  }
+
+  const toggleMute = () => {
+    setIsMuted(!isMuted)
   }
 
   return (
@@ -16,11 +23,17 @@ const WelcomeName = () => {
       <h2>Choisis ton nom de dresseur !</h2>
       <input type="text" />
       <div onClick={handleClick}>
-        <audio ref={audioRef}>
+        <audio ref={audioRef} muted={isMuted}>
           <source src={click} type="audio/mp3" />
         </audio>
         <img src={Pokeball} alt="Pokéball" className='btn-image' />
+
       </div>
+      <div onClick={toggleMute}>
+        {isMuted ? <img src={Mute} alt="Pokéball" className='sound' /> : <img src={SoundOn} alt="Pokéball" className='sound' />}
+      </div>
+
+
     </div>
   )
 };
