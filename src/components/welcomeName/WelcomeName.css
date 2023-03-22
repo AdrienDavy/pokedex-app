@@ -1,0 +1,8 @@
+.welcome-container{
+ /* margin: auto; */
+  z-index: 6;
+}
+
+.btn-image{
+  width: 60px;
+}
