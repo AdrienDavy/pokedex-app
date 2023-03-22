@@ -16,27 +16,27 @@ const Welcome = () => {
   const styles = [
     {
       name: "bigcloud",
-      transform: `translate(calc(${mousePosition.x / -200}px), calc(${mousePosition.y / -200}px))`
+      transform: `translate(calc(${mousePosition.x / -700}px), calc(${mousePosition.y / -700}px))`
     },
     {
       name:"cloud1",
-      transform: `translate(calc(${mousePosition.x / -100}px), calc(${mousePosition.y / -100}px))`
+      transform: `translate(calc(${mousePosition.x / -650}px), calc(${mousePosition.y / -650}px))`
     },
     {
       name:"cloud2",
-      transform: `translate(calc(${mousePosition.x / -100}px), calc(${mousePosition.y / -100}px))`
+      transform: `translate(calc(${mousePosition.x / -400}px), calc(${mousePosition.y / -400}px))`
     },
     {
       name:"backgroundfield",
-      transform: `translate(calc(${mousePosition.x / -100}px), calc(${mousePosition.y / -100}px))`
+      transform: `translate(calc(${mousePosition.x / -250}px), calc(${mousePosition.y / -250}px))`
     },
     {
       name:"house",
-      transform: `translate(calc(${mousePosition.x / -100}px), calc(${mousePosition.y / -100}px))`
+      transform: `translate(calc(${mousePosition.x / -400}px), calc(${mousePosition.y / -400}px))`
     },
     {
       name:"grassForeground",
-      transform: `translate(calc(${mousePosition.x / -100}px), calc(${mousePosition.y / -100}px))`
+      transform: `translate(calc(${mousePosition.x / -500}px), calc(${mousePosition.y / -500}px))`
     },
   ]
 

@@ -20,10 +20,11 @@ body {
 
 .bigcloud {
   position: absolute;
-  bottom: 350px;
+  bottom: 330px;
   left: 40px;
   width: 50%;
   z-index: 1;
+  animation: move 550s infinite;
 }
 
 .cloud1 {
@@ -40,6 +41,7 @@ body {
   left: 50%;
   width: 20%;
   z-index: 1;
+  
 }
 
 .backgroundfield {
@@ -100,4 +102,15 @@ body {
   .grassForeground{
     bottom: -20px;
   }
+}
+
+@keyframes move {
+  0%{
+    transform: translateX(0);
+  } 50%{
+    transform: translateX(50vw);
+  } 100% {
+    transform: translateX(0);
+  }
+  
 }
