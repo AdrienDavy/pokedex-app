@@ -12,7 +12,7 @@ import foreground from "../../assets/foreground.png";
 
 const Welcome = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  
+
 
   const styles = [
     {
@@ -20,29 +20,29 @@ const Welcome = () => {
       transform: `translate(calc(${mousePosition.x / -700}px), calc(${mousePosition.y / -700}px))`
     },
     {
-      name:"cloud1",
+      name: "cloud1",
       transform: `translate(calc(${mousePosition.x / -650}px), calc(${mousePosition.y / -650}px))`
     },
     {
-      name:"cloud2",
+      name: "cloud2",
       transform: `translate(calc(${mousePosition.x / -400}px), calc(${mousePosition.y / -400}px))`
     },
     {
-      name:"backgroundfield",
+      name: "backgroundfield",
       transform: `translate(calc(${mousePosition.x / -250}px), calc(${mousePosition.y / -250}px))`
     },
     {
-      name:"house",
+      name: "house",
       transform: `translate(calc(${mousePosition.x / -400}px), calc(${mousePosition.y / -400}px))`
     },
     {
-      name:"grassForeground",
+      name: "grassForeground",
       transform: `translate(calc(${mousePosition.x / -500}px), calc(${mousePosition.y / -500}px))`
     },
   ]
 
   const handleMouseMove = (e) => {
-    
+
     setMousePosition({
       x: e.screenX,
       y: e.screenY,
@@ -52,29 +52,29 @@ const Welcome = () => {
   return (
 
     <div className="sky" onMouseMove={handleMouseMove}>
-      
-    <WelcomeName />
-      
-        <img
-          src={BigCloud}
-          alt="cloud"
-          className={styles[0].name}
-          style={styles[0]}
-        />
-        <img
-          src={Cloud1}
-          alt="cloud"
-          className={styles[1].name}
-          style={styles[1]}
-        />
-        <img src={Cloud2} alt="cloud" className={styles[2].name} style={styles[2]} />
-      
+
+      <WelcomeName />
+
+      <img
+        src={BigCloud}
+        alt="cloud"
+        className={styles[0].name}
+        style={styles[0]}
+      />
+      <img
+        src={Cloud1}
+        alt="cloud"
+        className={styles[1].name}
+        style={styles[1]}
+      />
+      <img src={Cloud2} alt="cloud" className={styles[2].name} style={styles[2]} />
+
       <img src={backgroundfield} alt="field" className={styles[3].name} style={styles[3]} />
       <img src={House} alt="field" className={styles[4].name} style={styles[4]} />
       <img src={foreground} alt="field" className={styles[5].name} style={styles[4]} />
-      
+
     </div>
-  
+
   );
 };
 
