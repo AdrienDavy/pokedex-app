@@ -12,7 +12,7 @@
 
 .dresseur {
   border-radius: 5px;
-  border: 2px solid red;
+  border: 2px solid black;
   font-family: 'cooper_hewittsemibold';
 }
 
@@ -128,4 +128,23 @@ input[type=range]::-webkit-slider-runnable-track {
 
 input[type=range]:focus::-webkit-slider-runnable-track {
   background: #ffffff;
+}
+
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in;
 }

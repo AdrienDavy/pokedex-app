@@ -5,11 +5,12 @@ import SoundOn from '../../assets/soundOn.png';
 import Mute from '../../assets/mute.png';
 import click from '../../assets/click.mp3';
 import intro from '../../assets/intro.mp3';
+import { Link } from 'react-router-dom';
 
 
 const WelcomeName = () => {
   const [isMuted, setIsMuted] = useState(false);
-  const [volume, setVolume] = useState(0.1);
+  const [volume, setVolume] = useState(0);
   const audioRef = useRef(null);
   const music = useRef(null);
 
@@ -40,7 +41,12 @@ const WelcomeName = () => {
         <audio ref={audioRef} muted={isMuted}>
           <source src={click} type="audio/mp3" />
         </audio>
-        <img src={Pokeball} alt="Pokéball" className='btn-image' />
+
+
+        <Link to="/pokedex">
+          <img src={Pokeball} alt="Pokéball" className='btn-image' />
+        </Link>
+
       </div>
       <div onClick={toggleMute}>
         {isMuted ? <img src={Mute} alt="Pokéball" className='sound' /> : <img src={SoundOn} alt="Pokéball" className='sound' />}
