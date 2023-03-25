@@ -1,4 +1,4 @@
-import React, { useState, useContext, useRef, createContext } from 'react';
+import React, { useState, useContext, useRef, createContext, useEffect } from 'react';
 const SoundContext = createContext("");
 
 const SoundProvider = ({ children }) => {
@@ -39,6 +39,6 @@ const SoundProvider = ({ children }) => {
 
   );
 };
-export const useSound = () => useContext(SoundContext)
+export const useSound = () => useContext(SoundContext);
 
 export default SoundProvider;
