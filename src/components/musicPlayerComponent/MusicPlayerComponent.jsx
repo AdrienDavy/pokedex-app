@@ -26,7 +26,7 @@ function MusicPlayerComponent() {
       <audio ref={audioRef} muted={isMuted}>
         <source src={clickSound} type="audio/mp3" />
       </audio>
-      <audio ref={music} autoPlay muted={isMuted}>
+      <audio ref={music} muted={isMuted}>
         <source src={pokemonMusic} type="audio/mpeg" />
       </audio>
       <input
