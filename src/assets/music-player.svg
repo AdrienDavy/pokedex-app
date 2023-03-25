@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 388.53 242.4">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f9f16d;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-3 {
+        stroke: #000;
+        stroke-width: 5px;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+        stroke-width: 8px;
+      }
+
+      .cls-2, .cls-3, .cls-6 {
+        fill: none;
+      }
+
+      .cls-2, .cls-4 {
+        stroke: #0c1957;
+      }
+
+      .cls-7 {
+        fill: #f2f4e7;
+      }
+
+      .cls-8 {
+        fill: #4c124b;
+      }
+
+      .cls-9 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-10 {
+        fill: #d8d395;
+      }
+
+      .cls-11 {
+        fill: #0c1957;
+      }
+
+      .cls-4 {
+        fill: #fd1956;
+      }
+
+      .cls-12 {
+        fill: #030651;
+      }
+
+      .cls-13 {
+        fill: #2b4a63;
+      }
+    </style>
+    <clipPath id="clippath-1">
+      <rect class="cls-6" x="38.53" y="55.52" width="297" height="101.28" rx="17.97" ry="17.97"/>
+    </clipPath>
+  </defs>
+  <g id="compo_pokémon" data-name="compo pokémon">
+    <path id="_pokémon_ombre" data-name=" pokémon ombre" class="cls-8" d="M388.53,27.76V219.9c0,12.42-13.34,22.49-29.79,22.49H65.14c-27.92-8.78-48.86-16.98-58.16-35.72V27.76c0-12.42,13.34-22.49,29.79-22.49H358.73c16.46,0,29.79,10.07,29.79,22.49Z"/>
+    <path id="cadre_pokémon" data-name="cadre pokémon" class="cls-7" d="M381.55,22.49V214.63c0,12.42-13.34,22.49-29.79,22.49H58.16c-27.92-8.78-48.86-16.98-58.16-35.72V22.49C0,10.07,13.34,0,29.79,0H351.76c16.46,0,29.79,10.07,29.79,22.49Z"/>
+    <ellipse class="cls-4" cx="164.26" cy="15.33" rx="9.16" ry="8.57"/>
+    <ellipse class="cls-4" cx="224.26" cy="15.33" rx="9.16" ry="8.57"/>
+    <g id="micro">
+      <line class="cls-2" x1="242.35" y1="174.2" x2="363.33" y2="174.2"/>
+      <line class="cls-2" x1="242.73" y1="194.79" x2="363.71" y2="194.79"/>
+      <line class="cls-2" x1="242.73" y1="215.72" x2="363.71" y2="215.72"/>
+    </g>
+  </g>
+  <g id="screen_info" data-name="screen info">
+    <rect class="cls-12" x="38.53" y="39.27" width="297" height="117.52" rx="17.97" ry="17.97"/>
+    <rect class="cls-11" x="38.53" y="55.52" width="297" height="101.28" rx="17.97" ry="17.97"/>
+    <g class="cls-9">
+      <polygon class="cls-13" points="262.97 52.65 198.4 157.75 260.51 156.8 325.69 53.61 262.97 52.65"/>
+      <polygon class="cls-13" points="179.34 52.65 114.78 157.75 126.46 156.8 191.64 53.61 179.34 52.65"/>
+      <polygon class="cls-13" points="115.39 52.65 50.83 157.75 93.87 156.8 159.05 53.61 115.39 52.65"/>
+    </g>
+  </g>
+  <g id="btn_jaune" data-name="btn jaune">
+    <circle class="cls-1" cx="134.26" cy="98.52" r="40.18"/>
+    <path class="cls-10" d="M130.14,65.55c32.97,10.3,43.27,49.45,4.12,57.69-12.36,2.06-24.73-2.06-24.73-2.06,0,0,41.21,37.09,62.84-17.51-3.09-54.6-42.24-38.12-42.24-38.12Z"/>
+    <circle class="cls-3" cx="134.26" cy="98.52" r="40.18"/>
+    <ellipse class="cls-5" cx="118.48" cy="82.73" rx="5.74" ry="4.3" transform="translate(-12.41 143.97) rotate(-60)"/>
+  </g>
+  <g id="btn_jaune-2" data-name="btn jaune">
+    <circle class="cls-1" cx="254.26" cy="98.52" r="40.18"/>
+    <path class="cls-10" d="M250.14,65.55c32.97,10.3,43.27,49.45,4.12,57.69-12.36,2.06-24.73-2.06-24.73-2.06,0,0,41.21,37.09,62.84-17.51-3.09-54.6-42.24-38.12-42.24-38.12Z"/>
+    <circle class="cls-3" cx="254.26" cy="98.52" r="40.18"/>
+    <ellipse class="cls-5" cx="238.48" cy="82.73" rx="5.74" ry="4.3" transform="translate(47.59 247.9) rotate(-60)"/>
+  </g>
+</svg>

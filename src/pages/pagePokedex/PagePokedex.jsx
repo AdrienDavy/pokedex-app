@@ -1,11 +1,14 @@
 import React from 'react';
+
 import './PagePokedex.css'
 
 const PagePokedex = () => {
   return (
+    
     <div>
       PagePokedex
     </div>
+   
   )
 }
 
