@@ -1,0 +1,108 @@
+.musicPlayer {
+  width: 150px;
+}
+
+.musicZone {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 7;
+}
+
+.toggleMute {
+  position: absolute;
+  top: 8px;
+  right: 21px;
+  margin: 20px;
+  width: 20px;
+  cursor: pointer;
+  z-index: 7;
+}
+
+.playPauseButton {
+  position: absolute;
+  top: 3px;
+  right: 63px;
+  margin: 20px;
+  width: 30px;
+  cursor: pointer;
+  z-index: 7;
+}
+
+h3 {
+  position: relative;
+  z-index: 1;
+  margin-top: 10px;
+}
+
+h3:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(72, 178, 231, 0.5);
+  border-radius: 5px;
+  filter: blur(3px);
+  z-index: -1;
+}
+
+/*-------------- VOLUME ------------*/
+
+input[type=range] {
+  appearance: none;
+  /* Hides the slider so that custom slider can be made */
+  width: 80%;
+  /* Specific width is required for Firefox. */
+  background: transparent;
+  /* Otherwise white in Chrome */
+}
+
+input[type=range]::-webkit-slider-thumb {
+  appearance: none;
+  height: 25px;
+  width: 25px;
+  background: url('../../assets/pokeballicone.png') no-repeat;
+  cursor: pointer;
+  margin-top: -7px;
+  z-index: 10;
+  /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  background: url('../../assets/pokeballicone.png') center;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  background: url('../../assets/pokeballicone.png') center;
+  cursor: pointer;
+  z-index: 20;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 80%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #ffffff;
+  border-radius: 5px;
+  border: 2px solid #010101;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ffffff;
+}
