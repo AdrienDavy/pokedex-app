@@ -1,13 +1,15 @@
-.hidden {
-  animation: fondu 1s forwards;
+.fadeIn {
+  animation: fadeIn 1s forwards;
 }
 
-.visible {
-  opacity: 1;
+.pokecomp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-
-@keyframes fondu {
+@keyframes fadeIn {
   0% {
     opacity: 0;
   }

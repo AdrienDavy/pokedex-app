@@ -10,11 +10,10 @@ const TransitionProvider = ({ children }) => {
   const handleTransitionButton = () => {
 
     setIsHidden(true)
+
     setTimeout(() => {
       navigate('/pokedex')
-    }, 2000);
-
-
+    }, 1000);
   };
 
   return (

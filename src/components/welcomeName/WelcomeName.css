@@ -10,8 +10,18 @@
   flex-direction: column;
 }
 
-.welcome-container-hidden {
-  animation: fondu 1s forwards;
+.welcome-container-fadeOut {
+  animation: fadeOut 2s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 .dresseur {
@@ -62,14 +72,4 @@ h2 {
 
 h3 {
   margin: 20px;
-}
-
-@keyframes fondu {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
 }

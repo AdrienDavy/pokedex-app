@@ -2,10 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .pokedex {
-  margin: auto;
-  margin-top: 5vh;
   width: 60vw;
 }

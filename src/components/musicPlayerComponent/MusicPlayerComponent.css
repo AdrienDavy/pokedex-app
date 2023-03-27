@@ -32,6 +32,34 @@
   z-index: 7;
 }
 
+.toggleMute:hover,
+.playPauseButton:hover {
+  animation: bounce 1s infinite;
+}
+
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.2);
+  }
+
+  50% {
+    transform: scale(0.9);
+  }
+
+  75% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 h3 {
   position: relative;
   z-index: 1;
