@@ -10,6 +10,20 @@
   flex-direction: column;
 }
 
+.welcome-container-fadeOut {
+  animation: fadeOut 2s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 .dresseur {
   border-radius: 5px;
   border: 2px solid black;

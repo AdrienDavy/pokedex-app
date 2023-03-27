@@ -1,11 +1,11 @@
-import React, { useState, useContext, useRef, createContext } from 'react';
+import React, { useState, useContext, useRef, createContext, useEffect } from 'react';
 const SoundContext = createContext("");
 
 const SoundProvider = ({ children }) => {
   const [isMuted, setIsMuted] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const [volume, setVolume] = useState(0);
-  const audioRef = useRef(null);
+  const clickSoundRef = useRef(null);
   const music = useRef(null);
   //control volume
   const toggleMuteButton = () => {
@@ -15,6 +15,7 @@ const SoundProvider = ({ children }) => {
   const handlePlayPause = () => {
     if (isPlaying) {
       setIsPlaying(false);
+
       music.current.pause(); // freeze music
     } else {
       setIsPlaying(true);
@@ -28,17 +29,17 @@ const SoundProvider = ({ children }) => {
   }
 
   const handleClickSoundButton = () => {
-    audioRef.current.play();
-    audioRef.current.volume = 0.3;
+    clickSoundRef.current.play();
+    clickSoundRef.current.volume = 0.3;
   }
   return (
-    <SoundContext.Provider value={{ isMuted, setIsMuted, volume, setVolume, audioRef, music, handleChangeVolume, handleClickSoundButton, toggleMuteButton, isPlaying, setIsPlaying, handlePlayPause }
+    <SoundContext.Provider value={{ isMuted, setIsMuted, volume, setVolume, clickSoundRef, music, handleChangeVolume, handleClickSoundButton, toggleMuteButton, isPlaying, setIsPlaying, handlePlayPause }
     }>
       {children}
     </SoundContext.Provider>
 
   );
 };
-export const useSound = () => useContext(SoundContext)
+export const useSound = () => useContext(SoundContext);
 
 export default SoundProvider;

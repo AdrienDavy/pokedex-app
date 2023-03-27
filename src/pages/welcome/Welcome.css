@@ -1,13 +1,31 @@
 body {
   background: #3FA6C0;
-  
 }
 
+.active {
+  display: block;
+}
+
+.fadeOut {
+  animation: fadeOut 1s 1;
+}
+
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 
 .sky {
   background: url('../../assets/sky.png');
   background-size: cover;
   height: 100vh;
+  width: 100vw;
   position: relative;
   z-index: 0;
   max-width: 100%;
@@ -16,7 +34,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 1;
 }
+
 
 .bigcloud {
   position: absolute;
@@ -41,7 +61,7 @@ body {
   left: 50%;
   width: 20%;
   z-index: 1;
-  
+
 }
 
 .backgroundfield {
@@ -65,10 +85,12 @@ body {
   left: 0;
   bottom: -100px;
   width: 103vw;
-  z-index: 5;  
+  z-index: 5;
 }
 
-.backgroundfield, .house, .grassForeground{
+.backgroundfield,
+.house,
+.grassForeground {
   transition: bottom 0.5s ease-in-out;
 }
 
@@ -77,40 +99,47 @@ body {
 
 @media screen and (max-width:940px) {
 
-  
+
   .backgroundfield {
     bottom: 30px;
   }
-  .house{
+
+  .house {
     bottom: -20px;
   }
 
-  .grassForeground{
+  .grassForeground {
     bottom: -20px;
   }
 }
+
 /* VERSION MOBILE */
 
 @media screen and (max-width:768px) {
   .backgroundfield {
     bottom: 30px;
   }
-  .house{
+
+  .house {
     bottom: -20px;
   }
 
-  .grassForeground{
+  .grassForeground {
     bottom: -20px;
   }
 }
 
 @keyframes move {
-  0%{
-    transform: translateX(0);
-  } 50%{
-    transform: translateX(50vw);
-  } 100% {
+  0% {
     transform: translateX(0);
   }
-  
+
+  50% {
+    transform: translateX(50vw);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+
 }

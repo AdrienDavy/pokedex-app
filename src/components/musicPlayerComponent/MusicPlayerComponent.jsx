@@ -10,7 +10,7 @@ import pokemonMusic from '../../assets/intro.mp3';
 import SoundProvider, { useSound } from "../../contexts/SoundContext";
 
 function MusicPlayerComponent() {
-  const { isMuted, volume, audioRef, music, handleChangeVolume, toggleMuteButton, isPlaying, setIsPlaying, handlePlayPause } = useSound();
+  const { isMuted, volume, clickSoundRef, music, handleChangeVolume, toggleMuteButton, isPlaying, setIsPlaying, handlePlayPause } = useSound();
 
   return (<div>
 
@@ -23,10 +23,10 @@ function MusicPlayerComponent() {
       <div onClick={handlePlayPause}>
         {isPlaying ? <img src={pauseButtonIcon} alt="Pause button" className='playPauseButton' /> : <img src={playButtonIcon} alt="Play button" className='playPauseButton' />}
       </div>
-      <audio ref={audioRef} muted={isMuted}>
+      <audio ref={clickSoundRef} muted={isMuted}>
         <source src={clickSound} type="audio/mp3" />
       </audio>
-      <audio ref={music} autoPlay muted={isMuted}>
+      <audio ref={music} muted={isMuted}>
         <source src={pokemonMusic} type="audio/mpeg" />
       </audio>
       <input
