@@ -3,8 +3,32 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  flex-direction: row;
 }
 
-.pokedex {
-  width: 60vw;
+.pokedex:nth-child(1) {
+  width: 30vw;
+  z-index: 1;
+}
+
+.pokedex:nth-child(2) {
+  width: 30vw;
+  transition: margin-top 500ms ease;
+}
+
+@media screen and (max-width:768px) {
+
+  .pokedex-container {
+    flex-direction: column;
+  }
+
+  .pokedex:nth-child(1) {
+    width: 50vw;
+  }
+
+  .pokedex:nth-child(2) {
+    width: 50vw;
+    margin-top: -80px;
+  }
+
 }

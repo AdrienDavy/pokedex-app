@@ -1,5 +1,5 @@
 .fadeIn {
-  animation: fadeIn 1s forwards;
+  animation: fadeIn 1500ms forwards ease;
 }
 
 .pokecomp {
@@ -11,10 +11,12 @@
 
 @keyframes fadeIn {
   0% {
+    transform: translateY(-100vw);
     opacity: 0;
   }
 
   100% {
+    transform: translateX(0);
     opacity: 1;
   }
 }
