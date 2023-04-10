@@ -1,0 +1,15 @@
+.pokemon-screen {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  z-index: 0;
+}
+
+.pokemon-picture {
+  width: 45%;
+  position: absolute;
+  height: auto;
+  top: 32%;
+  left: 20%;
+  z-index: 1;
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 665.83 441.97">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00d8fd;
+      }
+
+      .cls-2 {
+        fill: #00e6fe;
+      }
+
+      .cls-3 {
+        fill: #02b2d7;
+      }
+    </style>
+  </defs>
+  <g id="compo_pokémon" data-name="compo pokémon">
+    <rect id="ombre_haut_ecran" data-name="ombre haut ecran" class="cls-3" width="665.83" height="441.97" rx="12" ry="12"/>
+    <rect id="ecran" class="cls-1" y="21.52" width="664.39" height="416.14" rx="16.21" ry="16.21"/>
+    <path id="reflet_2" data-name="reflet 2" class="cls-2" d="M368.5,437.67L664.39,115.61V21.83c0-.17-.14-.3-.3-.3h-60.39L221.38,437.67h147.12Z"/>
+    <polygon id="reflet_1" data-name="reflet 1" class="cls-2" points="0 272.36 278.64 22.96 102.15 22.96 0 114.39 0 272.36"/>
+  </g>
+</svg>
