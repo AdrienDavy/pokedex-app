@@ -4,15 +4,18 @@ import pokedexRight from '../../assets/pokedex-right.svg';
 import { usePokemon } from '../../contexts/PokemonContext';
 
 const InfoPokemon = () => {
-  const { pokemonData } = usePokemon();
+  const { pokemonData, setPokemonData, pokemonInfos, setPokemonInfos, pokemonType, setPokemonType } = usePokemon();
+
+  console.log("pokemonData?.apiTypes", pokemonType);
+
 
   return (
     <div className='info-pokemon'>
       <div className="infos">
-        <h1>Version: {pokemonData?.version}</h1>
-        <h1>Type: {pokemonData?.type}</h1>
-        <h1>Taille: {pokemonData?.height}</h1>
-        <h1>Poids: {pokemonData?.weight}</h1>
+        <h1>Type:{pokemonType} </h1>
+        <h1>Versions:  </h1>
+        <h1>Taille: {pokemonInfos?.height}</h1>
+        <h1>Poids: {pokemonInfos?.weight}</h1>
       </div>
 
       <img src={pokedexRight} alt="pokedex" className='pokedex-right' />

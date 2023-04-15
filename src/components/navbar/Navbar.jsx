@@ -4,48 +4,43 @@ import './Navbar.css';
 import { usePokemon } from '../../contexts/PokemonContext';
 
 const Navbar = () => {
-  const { pokemonSearch, setPokemonSearch, pokemonData, setPokemonData, pokemonId, setPokemonId } = usePokemon()
-
-
-
+  const { pokemonSearch, setPokemonSearch, setPokemonData, pokemonId, setPokemonId, setPokemonInfos, pokemonType, setPokemonType } = usePokemon()
 
   useEffect(() => {
     const pokebuildapi = `https://pokebuildapi.fr/api/v1/pokemon/${pokemonSearch}`;
-    // const pokeapi = `https://pokeapi.co/api/v2/pokemon/${parseInt(pokemonId)}`;
     axios
       .get(pokebuildapi)
       .then(res => {
         console.log("res.data", res.data);
-        setPokemonData(res.data)
-        setPokemonId(res.data.id)
+        setPokemonData(res.data);
+        setPokemonId(res.data.id);
+        setPokemonType(res.data.apiTypes.map((p) => p.name).join(","))
       })
       .catch(err => console.log(err))
-  }, [])
+  }, [pokemonSearch])
 
-  const submitPokemon = (e) => {
-    e.preventDefault()
-    setPokemonData(pokemonSearch)
-    setPokemonId(pokemonId);
+
+  useEffect(() => {
+    const pokeapi = `https://pokeapi.co/api/v2/pokemon/${parseInt(pokemonId)}`;
+    axios
+      .get(pokeapi)
+      .then(res => {
+        setPokemonInfos(res.data)
+
+      })
   }
-
-  // useEffect(() => {
-  //   axios
-  //     .get(`https://pokeapi.co/api/v2/pokemon/${parseInt(pokemonId)}`)
-  //     .then
-  // }
-  //   , [])
+    , [pokemonId])
 
   return (
     <div className="navbar-container">
       <div className="search">
-        <form onSubmit={submitPokemon}>
+        <form>
           <input
             type="text"
             value={pokemonSearch}
             placeholder="ex: Pikachu"
             onChange={(e) => setPokemonSearch(e.target.value)}
           />
-          <button type="submit" >Search</button>
         </form>
       </div>
     </div>
