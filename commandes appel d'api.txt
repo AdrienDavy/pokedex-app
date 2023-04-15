@@ -1,0 +1,68 @@
+import React from 'react';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+
+const Pokemon = () => {
+  const [pokemonInfos, setPokemonInfos] = useState([]);
+  const [pokemonImg, setPokemonImg] = useState('');
+  const [pokemonPrompt, setPokemonPrompt] = useState('');
+  const [pokemonObj, setPokemonObj] = useState([]);
+  const [pokemonName, setPokemonName] = useState([]);
+  const [pokemonId, setPokemonId] = useState([]);
+  useEffect(() => {
+    axios
+      .get(`https://pokebuildapi.fr/api/v1/pokemon/${pokemonPrompt}`)
+      .then((res) => {
+        // setPokemonName(res.data.name);
+        // setPokemonId(res.data.id);
+        // setPokemonImg(res.data.image);
+        setPokemonObj(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, [pokemonPrompt]);
+  // console.log('pokemonName :', pokemonName);
+  // console.log('pokemonId :', pokemonId);
+  // console.log('pokemonImg :', pokemonImg);
+  useEffect(() => {
+    axios
+      .get(`https://pokeapi.co/api/v2/pokemon/${pokemonObj.id}`)
+      .then((res) => {
+        setPokemonInfos(res.data.types[0].type);
+        console.log('pokemon infos :', pokemonInfos);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, [pokemonPrompt]);
+
+  // console.log(pokemonPrompt);
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   setPokemonPrompt(e.target.value);
+  // };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
+  return (
+    <div>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor='pokemon'>
+          Choisis ton pokémon
+          <input
+            type='text'
+            value={pokemonPrompt}
+            onChange={(e) => setPokemonPrompt(e.target.value)}
+          />
+        </label>
+        <button type='submit'>Valider</button>
+      </form>
+      <img src={pokemonObj.image} alt='' />
+      <p>{pokemonInfos.name}</p>
+    </div>
+  );
+};
+
+export default Pokemon;
