@@ -7,9 +7,10 @@ const PokemonProvider = ({ children }) => {
 
   const [pokemonSearch, setPokemonSearch] = useState("");
   const [pokemonData, setPokemonData] = useState([]);
+  const [pokemonId, setPokemonId] = useState(null);
 
   return (
-    <PokemonContext.Provider value={{ pokemonSearch, setPokemonSearch, pokemonData, setPokemonData }}>
+    <PokemonContext.Provider value={{ pokemonSearch, setPokemonSearch, pokemonData, setPokemonData, pokemonId, setPokemonId }}>
       {children}
     </PokemonContext.Provider>
   )

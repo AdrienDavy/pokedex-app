@@ -4,7 +4,7 @@ import './Navbar.css';
 import { usePokemon } from '../../contexts/PokemonContext';
 
 const Navbar = () => {
-  const { pokemonSearch, setPokemonSearch, pokemonData, setPokemonData } = usePokemon()
+  const { pokemonSearch, setPokemonSearch, pokemonData, setPokemonData, pokemonId, setPokemonId } = usePokemon()
 
 
 
@@ -17,12 +17,24 @@ const Navbar = () => {
       .then(res => {
         console.log("res.data", res.data);
         setPokemonData(res.data)
+        setPokemonId(res.data.id)
       })
+      .catch(err => console.log(err))
   }, [])
+
   const submitPokemon = (e) => {
     e.preventDefault()
     setPokemonData(pokemonSearch)
+    setPokemonId(pokemonId);
   }
+
+  // useEffect(() => {
+  //   axios
+  //     .get(`https://pokeapi.co/api/v2/pokemon/${parseInt(pokemonId)}`)
+  //     .then
+  // }
+  //   , [])
+
   return (
     <div className="navbar-container">
       <div className="search">
