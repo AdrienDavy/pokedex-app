@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "cooperhewitt-medium";
+  src: url("../../assets/fonts/cooperhewitt-medium-webfont.woff");
+}
+
 .info-pokemon {
   width: 100%;
   position: relative;
@@ -11,16 +16,25 @@
   position: absolute;
   height: auto;
   z-index: 1;
-  top: 31%;
-  mix-blend-mode: difference;
+  top: 26%;
   transition: top 250ms ease;
 }
 
 .infos li {
-  font-size: 1.5vw;
+  font-family: "cooperhewitt-medium";
+  font-size: 1.4vw;
   text-align: center;
   letter-spacing: 0.3vw;
   transition: font-size 250ms ease;
+  text-shadow: 0 0 3px #Fff;
+}
+
+.infos li:nth-child(1) {
+  font-size: 2.5vw;
+  color: #F9F16D;
+  text-decoration: underline;
+  text-shadow: 0 0 5px #F9F16D;
+  padding-bottom: 2%;
 }
 
 .type-image {
@@ -28,7 +42,7 @@
   height: auto;
   z-index: 2;
   position: absolute;
-  top: 96%;
+  top: 99%;
   left: 40%;
 }
 
@@ -37,7 +51,7 @@
   height: auto;
   z-index: 2;
   position: absolute;
-  top: 96%;
+  top: 99%;
   left: 50%;
 }
 
@@ -56,10 +70,14 @@
 */
 @media screen and (max-width:768px) {
   .infos {
-    top: 29%;
+    top: 25%;
   }
 
   .infos li {
-    font-size: 3vw;
+    font-size: 2.7vw;
+  }
+
+  .infos li:nth-child(1) {
+    font-size: 3.7vw;
   }
 }
