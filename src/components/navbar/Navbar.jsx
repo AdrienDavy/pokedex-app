@@ -33,16 +33,18 @@ const Navbar = () => {
 
   return (
     <div className="navbar-container">
-      <div className="search">
-        <form>
-          <input
-            type="text"
-            value={pokemonSearch}
-            placeholder="ex: Pikachu"
-            onChange={(e) => setPokemonSearch(e.target.value)}
-          />
-        </form>
-      </div>
+
+      <form>
+        <label htmlFor="recherche" className='recherche'>Recherche par nom de pokémon</label>
+        <input
+          type="text"
+          value={pokemonSearch}
+          placeholder="ex: Pikachu ou ID Pokédex"
+          onChange={(e) => setPokemonSearch(e.target.value)}
+          id='recherche'
+        />
+      </form>
+
     </div>
   );
 };

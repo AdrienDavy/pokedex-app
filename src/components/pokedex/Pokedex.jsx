@@ -2,7 +2,6 @@ import React from 'react';
 import './Pokedex.css';
 import Pokemon from '../pokemon/Pokemon';
 import InfoPokemon from '../infoPokemon/InfoPokemon';
-import { usePokemon } from '../../contexts/PokemonContext';
 
 const Pokedex = () => {
 

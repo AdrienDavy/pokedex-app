@@ -16,9 +16,9 @@ const PagePokedex = () => {
 
 
   return (
-    <div className={isHidden ? 'pokecomp' : 'fadeIn'}>
-      <div>
-        <Navbar />
+    <div>
+      <Navbar />
+      <div className={isHidden ? 'pokecomp' : 'fadeIn'}>
         <Pokedex />
       </div>
     </div>

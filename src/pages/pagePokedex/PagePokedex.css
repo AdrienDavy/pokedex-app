@@ -6,12 +6,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 @keyframes fadeIn {
   0% {
-    transform: translateY(-100vw);
+    transform: translateY(-15vw);
     opacity: 0;
   }
 
