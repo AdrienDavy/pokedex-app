@@ -1,20 +1,22 @@
 .fadeIn {
-  animation: fadeIn 1s forwards;
+  animation: fadeIn 1500ms forwards ease;
 }
 
 .pokecomp {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 @keyframes fadeIn {
   0% {
+    transform: translateY(-15vw);
     opacity: 0;
   }
 
   100% {
+    transform: translateX(0);
     opacity: 1;
   }
 }

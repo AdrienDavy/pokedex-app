@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="pokédex" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 693.09 394.93">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-2 {
+        fill: #0c1957;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .cls-4 {
+        fill: #030651;
+      }
+
+      .cls-5 {
+        fill: #2b4a63;
+      }
+    </style>
+    <clipPath id="clippath-1">
+      <rect class="cls-3" y="54.14" width="693.09" height="337.6" rx="17.97" ry="17.97"/>
+    </clipPath>
+  </defs>
+  <g id="screen_info" data-name="screen info">
+    <rect class="cls-4" width="693.09" height="391.75" rx="17.97" ry="17.97"/>
+    <rect class="cls-2" y="54.14" width="693.09" height="337.6" rx="17.97" ry="17.97"/>
+    <g class="cls-1">
+      <polygon class="cls-5" points="523.77 44.59 373.09 394.93 518.03 391.75 670.13 47.77 523.77 44.59"/>
+      <polygon class="cls-5" points="328.61 44.59 177.94 394.93 205.2 391.75 357.31 47.77 328.61 44.59"/>
+      <polygon class="cls-5" points="179.37 44.59 28.7 394.93 129.15 391.75 281.26 47.77 179.37 44.59"/>
+    </g>
+  </g>
+</svg>

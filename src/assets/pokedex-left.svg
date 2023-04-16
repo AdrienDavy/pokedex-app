@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 991.57 1391.93">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2, .cls-5, .cls-6, .cls-7, .cls-9, .cls-11, .cls-13 {
+        stroke: #000;
+      }
+
+      .cls-1, .cls-2, .cls-6, .cls-7, .cls-12 {
+        stroke-width: 5px;
+      }
+
+      .cls-1, .cls-14 {
+        fill: #ff1957;
+      }
+
+      .cls-15 {
+        fill: #fa8f7a;
+      }
+
+      .cls-2, .cls-16 {
+        fill: #f9f16d;
+      }
+
+      .cls-17 {
+        fill: #fff;
+      }
+
+      .cls-18 {
+        fill: #00d8fd;
+      }
+
+      .cls-19 {
+        fill: #06b2d8;
+      }
+
+      .cls-20 {
+        stroke-width: 3px;
+      }
+
+      .cls-20, .cls-21 {
+        fill: #79dce2;
+        stroke: #f2f4e7;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3, .cls-4, .cls-7 {
+        fill: none;
+      }
+
+      .cls-3, .cls-8, .cls-12 {
+        stroke: #0c1957;
+      }
+
+      .cls-3, .cls-10 {
+        stroke-linecap: round;
+      }
+
+      .cls-3, .cls-13 {
+        stroke-width: 8px;
+      }
+
+      .cls-4 {
+        stroke: #491457;
+        stroke-width: 13px;
+      }
+
+      .cls-22 {
+        fill: #74b27d;
+      }
+
+      .cls-23 {
+        fill: #f2f4e7;
+      }
+
+      .cls-24 {
+        fill: #6b215a;
+      }
+
+      .cls-25 {
+        fill: #491358;
+      }
+
+      .cls-26 {
+        fill: #4c124b;
+      }
+
+      .cls-27 {
+        fill: #ad2355;
+      }
+
+      .cls-28 {
+        fill: #d8d395;
+      }
+
+      .cls-5 {
+        stroke-width: .5px;
+      }
+
+      .cls-5, .cls-6 {
+        fill: #2ff156;
+      }
+
+      .cls-29 {
+        fill: #0c1957;
+      }
+
+      .cls-30 {
+        fill: #00e6fe;
+      }
+
+      .cls-31 {
+        fill: #02b2d7;
+      }
+
+      .cls-8, .cls-12 {
+        fill: #fd1956;
+      }
+
+      .cls-32 {
+        fill: #491457;
+      }
+
+      .cls-21 {
+        stroke-width: 2px;
+      }
+
+      .cls-9, .cls-13 {
+        fill: #02dbfc;
+      }
+
+      .cls-10 {
+        fill: #2a4e61;
+        stroke: #1d1d1b;
+      }
+
+      .cls-33 {
+        fill: #62e2da;
+      }
+
+      .cls-11 {
+        fill: #fa8d56;
+        stroke-width: .75px;
+      }
+    </style>
+  </defs>
+  <g id="bg_gauche" data-name="bg gauche">
+    <g id="_1" data-name=" 1">
+      <path class="cls-25" d="M871.03,78.92H24.83c-13.72,0-24.83,11.12-24.83,24.83V1336.1c0,30.83,24.99,55.83,55.83,55.83H878.21l-6.37-1159.28-.81-153.72h0Z"/>
+    </g>
+    <g id="_1-2" data-name=" 1-2">
+      <path class="cls-14" d="M876.77,20.09H27.26C12.21,20.09,0,32.3,0,47.35V1274.84c0,32.17,26.08,58.26,58.26,58.26H883.95l-6.37-1159.28,.19-153.72h-1Z"/>
+    </g>
+    <polygon id="_2" data-name=" 2" class="cls-32" points="877.49 178.65 577.58 178.65 238.92 373.81 .72 373.81 .69 423.78 240.36 424.04 587.62 226.01 877.49 226.01 877.49 178.65"/>
+    <path class="cls-4" d="M818.65,220.27V1297.94H79.77c-26.2,0-47.42-21.28-47.33-47.48l2.72-836.46"/>
+  </g>
+  <g id="btn_vert" data-name="btn vert">
+    <circle class="cls-6" cx="485.02" cy="91.84" r="27.98"/>
+    <path class="cls-22" d="M482.15,68.88c22.96,7.17,30.13,34.44,2.87,40.18-8.61,1.43-17.22-1.43-17.22-1.43,0,0,28.7,25.83,43.77-12.2-2.15-38.03-29.42-26.55-29.42-26.55h0Z"/>
+    <circle class="cls-7" cx="485.02" cy="91.84" r="27.98"/>
+    <ellipse class="cls-17" cx="474.55" cy="81.1" rx="5.36" ry="3.59" transform="translate(167.04 451.52) rotate(-60)"/>
+  </g>
+  <g id="btn_jaune" data-name="btn jaune">
+    <circle class="cls-2" cx="411.84" cy="91.84" r="27.98"/>
+    <path class="cls-28" d="M408.97,68.88c22.96,7.17,30.13,34.44,2.87,40.18-8.61,1.43-17.22-1.43-17.22-1.43,0,0,28.7,25.83,43.77-12.2-2.15-38.03-29.42-26.55-29.42-26.55h0Z"/>
+    <circle class="cls-7" cx="411.84" cy="91.84" r="27.98"/>
+    <ellipse class="cls-17" cx="402.79" cy="81.1" rx="5.36" ry="3.59" transform="translate(131.16 389.38) rotate(-60)"/>
+  </g>
+  <g id="btn_rouge" data-name="btn rouge">
+    <circle class="cls-1" cx="335.78" cy="91.84" r="27.98"/>
+    <path class="cls-27" d="M332.91,68.88c22.96,7.17,30.13,34.44,2.87,40.18-8.61,1.43-17.22-1.43-17.22-1.43,0,0,28.7,25.83,43.77-12.2-2.15-38.03-29.42-26.55-29.42-26.55h0Z"/>
+    <circle class="cls-7" cx="335.78" cy="91.84" r="27.98"/>
+    <ellipse class="cls-17" cx="325.31" cy="81.1" rx="5.36" ry="3.59" transform="translate(92.42 322.28) rotate(-60)"/>
+  </g>
+  <g id="lentille_bleu" data-name="lentille bleu">
+    <path id="Ombre" class="cls-24" d="M294.17,202.33c0,72.91-44.47,132.02-132.02,132.02-94.71,0-132.02-59.11-132.02-132.02S94.98,66.01,167.89,66.01c66.01,0,126.28,63.41,126.28,136.32h0Z"/>
+    <circle class="cls-23" cx="152.83" cy="197.31" r="132.02"/>
+    <path class="cls-33" d="M20.81,197.31h22.24s-4.3,109.78,109.06,116.95,111.93-119.1,111.93-119.1h20.41c0,15.78,3.98,134.89-130.91,134.89S20.81,197.31,20.81,197.31Z"/>
+    <circle class="cls-13" cx="154.98" cy="195.16" r="86.1"/>
+    <path class="cls-19" d="M113.39,261.86c10.61,0,51.54,10.61,87.92-33.35s13.64-84.89,13.64-84.89c0,0,34.86,60.63,1.52,98.53-33.35,37.9-74.28,30.32-103.08,19.71Z"/>
+    <ellipse class="cls-21" cx="153.88" cy="202.06" rx="9.5" ry="9.49" transform="translate(-89.56 129.63) rotate(-36.14)"/>
+    <ellipse class="cls-20" cx="123.59" cy="158.92" rx="33.7" ry="20.24" transform="translate(-69.95 103.47) rotate(-36.14)"/>
+  </g>
+  <g id="bouton_bleu_gauche" data-name="bouton bleu gauche">
+    <path class="cls-24" d="M208.07,1051.12c0,28.13-22.81,50.94-50.94,50.94s-62.42-17.78-62.42-45.92,30.98-62.81,58.83-58.83c30.13,4.3,54.53,25.68,54.53,53.81h0Z"/>
+    <circle class="cls-9" cx="140.63" cy="1046.1" r="50.94"/>
+  </g>
+  <g id="Bouton_vert" data-name="Bouton vert">
+    <rect id="vert_ombre_bouton" data-name="vert ombre bouton" class="cls-24" x="245.38" y="1044.66" width="103.32" height="25.83" rx="9" ry="9"/>
+    <rect id="bouton_vert" data-name="bouton vert" class="cls-5" x="234.62" y="1033.9" width="103.32" height="25.83" rx="9" ry="9"/>
+  </g>
+  <g id="bouton_orange" data-name="bouton orange">
+    <rect id="orange_ombre_bouton" data-name="orange ombre bouton" class="cls-24" x="381.7" y="1044.66" width="103.32" height="25.83" rx="9" ry="9"/>
+    <rect id="bouton_orange-2" data-name="bouton orange-2" class="cls-11" x="370.94" y="1033.9" width="103.32" height="25.83" rx="9" ry="9"/>
+  </g>
+  <rect id="Gros_pad_jaune" data-name="Gros pad jaune" class="cls-16" x="91.12" y="1144.39" width="345.83" height="93.27" rx="8.82" ry="8.82"/>
+  <g id="croix">
+    <rect id="ombre_horizontal" data-name="ombre horizontal" class="cls-24" x="552.47" y="1107.81" width="200.9" height="74.62" rx="7.85" ry="7.85"/>
+    <rect id="ombre_verticale" data-name="ombre verticale" class="cls-24" x="615.61" y="1044.66" width="74.62" height="200.9" rx="7.85" ry="7.85"/>
+    <rect id="horizontal" class="cls-29" x="540.99" y="1096.33" width="200.9" height="74.62" rx="7.85" ry="7.85"/>
+    <rect id="vertical" class="cls-29" x="604.13" y="1033.18" width="74.62" height="200.9" rx="7.85" ry="7.85"/>
+    <polygon class="cls-10" points="640.72 1049.35 620.62 1072.26 660.81 1072.26 640.72 1049.35"/>
+    <polygon class="cls-10" points="725.72 1132.91 702.81 1112.82 702.81 1153 725.72 1132.91"/>
+    <polygon class="cls-10" points="642.15 1217.92 662.25 1195.01 622.06 1195.01 642.15 1217.92"/>
+    <polygon class="cls-10" points="557.15 1134.35 580.06 1154.44 580.06 1114.26 557.15 1134.35"/>
+  </g>
+  <g id="compo_pokémon" data-name="compo pokémon">
+    <path id="_pokémon_ombre" data-name=" pokémon ombre" class="cls-26" d="M812.2,448.31v470.9c0,30.45-24.68,55.13-55.13,55.13H213.81c-51.66-21.52-90.4-41.61-107.62-87.53V448.31c0-30.45,24.68-55.13,55.13-55.13H757.07c30.45,0,55.13,24.68,55.13,55.13Z"/>
+    <path id="cadre_pokémon" data-name="cadre pokémon" class="cls-23" d="M799.28,435.4v470.9c0,30.45-24.68,55.13-55.13,55.13H200.9c-51.66-21.52-90.4-41.61-107.62-87.53V435.4c0-30.45,24.68-55.13,55.13-55.13H744.15c30.45,0,55.13,24.68,55.13,55.13Z"/>
+    <circle class="cls-12" cx="238.21" cy="915.52" r="27.98"/>
+    <circle class="cls-8" cx="417.58" cy="398.92" r="10.76"/>
+    <circle class="cls-8" cx="452.02" cy="398.92" r="10.76"/>
+    <g id="micro">
+      <line class="cls-3" x1="541.7" y1="893.27" x2="765.56" y2="893.27"/>
+      <line class="cls-3" x1="542.42" y1="915.52" x2="766.28" y2="915.52"/>
+      <line class="cls-3" x1="542.42" y1="938.48" x2="766.28" y2="938.48"/>
+    </g>
+    <rect id="ombre_haut_ecran" data-name="ombre haut ecran" class="cls-31" x="114.8" y="434.8" width="665.83" height="441.97" rx="12" ry="12"/>
+    <rect id="ecran" class="cls-18" x="114.8" y="456.32" width="664.39" height="416.14" rx="16.21" ry="16.21"/>
+    <path id="reflet_2" data-name="reflet 2" class="cls-30" d="M483.3,872.47l295.89-322.06v-93.78c0-.17-.14-.3-.3-.3h-60.39l-382.32,416.14h147.12Z"/>
+    <polygon id="reflet_1" data-name="reflet 1" class="cls-30" points="114.8 707.16 393.44 457.76 216.95 457.76 114.8 549.19 114.8 707.16"/>
+  </g>
+  <g id="barre_milieu" data-name="barre milieu">
+    <polygon class="cls-25" points="877.12 19.98 894.67 8.5 897.21 1302.85 877.12 1320.07 877.12 19.98"/>
+    <polygon class="cls-15" points="896.86 1308.7 921.26 1294.35 918.39 0 894.67 8.5 896.86 1308.7"/>
+    <polygon class="cls-14" points="921.26 1294.35 945.65 1297.22 947.09 0 918.39 0 921.26 1294.35"/>
+    <path class="cls-25" d="M933.45,1292.92c31.3,0,46.68,12.2,46.68,27.26,0,17.21-15.38,27.26-46.68,27.26s-56.68-12.2-56.68-27.26,25.38-27.26,56.68-27.26Z"/>
+  </g>
+  <path class="cls-25" d="M957.42-.03h-13.06V1343.58s0,3.35,0,3.35c36.48-2,47.13-17.68,47.13-32.19V34.03c0-18.81-15.25-34.06-34.06-34.06Z"/>
+</svg>

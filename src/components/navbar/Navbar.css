@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "cooperhewitt-medium";
+  src: url("../../assets/fonts/cooperhewitt-medium-webfont.woff");
+}
+
+.navbar-container {
+  height: 20vh;
+  width: 60vw;
+  margin: 5vh auto;
+  padding: 2%;
+  /* margin-top: 5vh; */
+  display: flex;
+  border: 2px solid aliceblue;
+  border-radius: 5px;
+  background-color: #1e98b6;
+  box-shadow: 3px 2px 5px 0px rgba(6, 62, 128, 0.75);
+}
+
+.recherche {
+  display: flex;
+  flex-direction: column;
+  font-family: "cooperhewitt-medium";
+  font-size: 1.4vw;
+  text-align: center;
+  transition: font-size 250ms ease;
+  text-shadow: 0 0 3px #Fff;
+  color: aliceblue;
+}

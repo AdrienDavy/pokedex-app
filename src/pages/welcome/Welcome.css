@@ -44,7 +44,7 @@ body {
   left: 40px;
   width: 50%;
   z-index: 1;
-  animation: move 550s infinite;
+  animation: bigCLoudMove 550s infinite;
 }
 
 .cloud1 {
@@ -129,7 +129,7 @@ body {
   }
 }
 
-@keyframes move {
+@keyframes bigCLoudMove {
   0% {
     transform: translateX(0);
   }

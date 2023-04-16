@@ -1,12 +1,18 @@
 import React from 'react';
 import './Pokemon.css';
-
+import pokedexLeft from '../../assets/pokedex-left.svg';
+import { usePokemon } from '../../contexts/PokemonContext';
 const Pokemon = () => {
+  const { pokemonData } = usePokemon();
+
   return (
-    <div>
-      Pokemon
+    <div className='pokemon-screen'>
+
+      <h1> {pokemonData.pokedexId ? '#' + pokemonData?.pokedexId.toString().padStart(3, '0') : null}</h1>
+      <img src={pokemonData.image} alt={pokemonData.name} className='pokemon-picture' />
+      <img src={pokedexLeft} alt="pokedex left part" className='pokedex-left' />
     </div>
-  )
+  );
 };
 
 export default Pokemon;
