@@ -4,7 +4,7 @@ import './Navbar.css';
 import { usePokemon } from '../../contexts/PokemonContext';
 
 const Navbar = () => {
-  const { pokemonSearch, setPokemonSearch, setPokemonData, pokemonId, setPokemonId, setPokemonInfos, pokemonType, setPokemonType } = usePokemon()
+  const { pokemonSearch, setPokemonSearch, setPokemonData, pokemonId, setPokemonId, pokemonInfos, setPokemonInfos, pokemonType, setPokemonType, pokemonTypeImage, setPokemonTypeImage } = usePokemon()
 
   useEffect(() => {
     const pokebuildapi = `https://pokebuildapi.fr/api/v1/pokemon/${pokemonSearch}`;
@@ -14,7 +14,8 @@ const Navbar = () => {
         console.log("res.data", res.data);
         setPokemonData(res.data);
         setPokemonId(res.data.id);
-        setPokemonType(res.data.apiTypes.map((p) => p.name).join(","))
+        setPokemonType(res.data.apiTypes.map((type) => type.name).join("/"));
+        setPokemonTypeImage(res.data.apiTypes.map((type) => type.image));
       })
       .catch(err => console.log(err))
   }, [pokemonSearch])
@@ -26,10 +27,9 @@ const Navbar = () => {
       .get(pokeapi)
       .then(res => {
         setPokemonInfos(res.data)
-
       })
   }
-    , [pokemonId])
+    , [pokemonId, pokemonInfos])
 
   return (
     <div className="navbar-container">

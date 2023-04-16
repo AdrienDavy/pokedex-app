@@ -30,4 +30,16 @@ const getPokemon = () => {
 }
 
 
-export default getPokemon;
+// POUR AVOIR LES VERSIONS !
+useEffect(() => {
+  const pokeapi = `https://pokeapi.co/api/v2/pokemon/${parseInt(pokemonId)}`;
+  axios
+    .get(pokeapi)
+    .then(res => {
+      setPokemonInfos(res.data)
+      console.log(res.data.game_indices.map((v) => v.version));
+      setPokemonVersion(res.data.game_indices.map((v) => v.version.url).slice(0, 2).join(","));
+    })
+
+
+  export default getPokemon;
